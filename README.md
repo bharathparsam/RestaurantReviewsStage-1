@@ -1,8 +1,9 @@
 # Restaurant Review Stage 1
 
-- A Responsive web application which can be accessed over all screen sizes
-- Web application meets the accessibility standards so that it makes convenient for the screen readers as well as keyboard users.
-- Web application also has a Service worker to begin the process and the web data is cached so that it can be viewed even if user is not connected to internet.
+- Restaurant review is an application which allows user to browse or view all types of restaurants.
+- Google maps API is used to load the maps.
+- This is a responsive web application which can be accessed over all screen sizes
+- Web application meets the accessibility standards so that it makes convenient for the screen readers as well as keyboard users to access.
 
 ## How to Run
 - Clone the GitHub repository.
@@ -12,3 +13,5 @@
 - If you are using Python 3.x, then run the server with `python3 -m http.server 2000`
 - Run `http://localhost:2000` to launch the website
 - If you wish to change the `port number` then change it in `dphelper.js(line 11)`
+- If images doesn't get loaded just refresh or reload the page again in new tab.
+- This wont occur again once it is loaded because images are being cached and you will not have any issue with it.
