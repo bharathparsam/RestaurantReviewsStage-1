@@ -1,8 +1,8 @@
 # Restaurant Review Stage 1
 
--A Responsive web application which can be accessed over all screen sizes
--Web application meets the accessibility standards so that it makes convenient for the screen readers as well as keyboard users.
--Web application also has a Service worker to begin the process and the web data is cached so that it can be viewed even if user is not connected to internet.
+- A Responsive web application which can be accessed over all screen sizes
+- Web application meets the accessibility standards so that it makes convenient for the screen readers as well as keyboard users.
+- Web application also has a Service worker to begin the process and the web data is cached so that it can be viewed even if user is not connected to internet.
 
 ## How to Run
 - Clone the GitHub repository.
