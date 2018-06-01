@@ -8,7 +8,7 @@
 - Clone the GitHub repository.
 - Install python if you don't have it on your system using the following link
 [website](https://www.python.org/)
-- If you are using Python 2.x, then run the server with *python -m SimpleHTTPServer 2000* .
-- If you are using Python 3.x, then run the server with *python3 -m http.server 2000* .
-- Run `http://localhost:2000/` to launch the website.
-- If you wish to change the `port number` then change it in `dphelper.js(line 11)`.
+- If you are using Python 2.x, then run the server with `python -m SimpleHTTPServer 2000`
+- If you are using Python 3.x, then run the server with `python3 -m http.server 2000`
+- Run `http://localhost:2000` to launch the website
+- If you wish to change the `port number` then change it in `dphelper.js(line 11)`
