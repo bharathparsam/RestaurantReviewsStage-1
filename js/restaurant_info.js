@@ -50,16 +50,20 @@ fetchRestaurantFromURL = (callback) => {
  */
 fillRestaurantHTML = (restaurant = self.restaurant) => {
   const name = document.getElementById('restaurant-name');
+  name.setAttribute('aria-label','Name of the Restaurant' +restaurant.name);
   name.innerHTML = restaurant.name;
 
   const address = document.getElementById('restaurant-address');
+  address.setAttribute('aria-lable','Restaurant Address');
   address.innerHTML = restaurant.address;
 
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
+  image.alt='Image of the Restaurant' + restaurant.name;
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
 
   const cuisine = document.getElementById('restaurant-cuisine');
+  cuisine.setAttribute('aria-label','cuisine of the Restaurant');
   cuisine.innerHTML = restaurant.cuisine_type;
 
   // fill operating hours
