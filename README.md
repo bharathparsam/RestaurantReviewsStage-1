@@ -4,7 +4,7 @@
 - Google maps API is used to load the maps.
 - This is a responsive web application which can be accessed over all screen sizes
 - Web application meets the accessibility standards so that it makes convenient for the screen readers as well as keyboard users to access.
-
+- Service worker for cache creation so this lets users to load even without internet.
 ## How to Run
 - Clone the GitHub repository.
 - Install python if you don't have it on your system using the following link
