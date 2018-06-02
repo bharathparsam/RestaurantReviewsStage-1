@@ -1,4 +1,4 @@
-var CacheName = 'project-cache-v1';
+var CacheName = 'restaurant-cache';
 //This function is for fetching the files from the Internet/Cache
 self.addEventListener('fetch',function(e){
      if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') {
