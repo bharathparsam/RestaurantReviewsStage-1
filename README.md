@@ -18,4 +18,3 @@
 -   If you wish to change the `port number` then change it in `dphelper.js(line 11)`
 -   If images doesn't get loaded just refresh or reload the page again in new tab.
 -   This wont occur again once it is loaded because images are being cached and you will not have any issue with it.
--   View how to run in GIF -> gif if you don't understand.
