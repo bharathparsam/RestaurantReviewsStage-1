@@ -1,5 +1,7 @@
 var CacheName = 'restaurant-caches';
-//This function is for fetching the files from the Internet/Cache
+/*
+ *Function to fetch files from Internet.
+ */
 self.addEventListener('fetch', function(e) {
   if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') {
     return;
@@ -11,7 +13,11 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
-//This event will cache the visited webpages when the website is loaded for the first time
+
+/*
+ * Event will cache all visited pages when loaded at least once i.e for first time
+ */
+
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(CacheName).then(function(cache) {
@@ -39,7 +45,11 @@ self.addEventListener('install', function(e) {
     })
   );
 });
-//This event will update the new cache when any changes are there in the webite.
+
+/*
+ * Event to update new cache when any changes are found in website
+ */
+
 self.addEventListener('activate', function(e) {
   console.log('Service worker activated');
   e.waitUntil(
