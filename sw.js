@@ -1,7 +1,5 @@
-var CacheName = 'restaurant-cache';
-/*
- * Function to fetch Files from Internet
- */
+var CacheName = 'restaurant-caches';
+//This function is for fetching the files from the Internet/Cache
 self.addEventListener('fetch', function(e) {
   if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') {
     return;
@@ -13,11 +11,7 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
-/*
- * An Event to cache the visited webpages when loaded
- * for the very first time
- */
-
+//This event will cache the visited webpages when the website is loaded for the first time
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(CacheName).then(function(cache) {
@@ -28,9 +22,6 @@ self.addEventListener('install', function(e) {
         '/restaurant.html',
         '/js/dbhelper.js',
         '/js/restaurant_info.js',
-        'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
-        'https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2',
-        'https://maps.googleapis.com/maps/api/js?key=AIzaSyDpNTXSpTh2uXmmFEzBD8b0ibCNfEWazCU&libraries=places&callback=initMap',
         '/js/main.js',
         '/css/styles.css',
         '/data/restaurants.json',
@@ -48,10 +39,7 @@ self.addEventListener('install', function(e) {
     })
   );
 });
-
-/*
- * Event to update cache if any new changes are made in the website
- */
+//This event will update the new cache when any changes are there in the webite.
 self.addEventListener('activate', function(e) {
   console.log('Service worker activated');
   e.waitUntil(
